@@ -10,12 +10,12 @@ export const Schedule: HackathonEvent[] = [
   {
     name: 'Breakfast',
     startTime: moment({day: 11, month: 8, year: 2019, hour: 8, minute: 0, second: 0}).toDate(),
-    durationInHours: 3,
+    durationInHours: 0.5,
   },
   {
     name: 'Opening Event',
     startTime: moment({day: 11, month: 8, year: 2019, hour: 10, minute: 0, second: 0}).toDate(),
-    durationInHours: 1,
+    durationInHours: 0.5,
   },
   {
     name: 'Lunch',

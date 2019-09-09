@@ -13,7 +13,12 @@ const Container = styled.div`
   padding: 72px 0;
 `;
 
-const getNextEvent = (): HackathonEvent => {
+interface EventState {
+  event: HackathonEvent;
+  isHappeningNow: boolean;
+}
+
+const getNextEvent = (): EventState => {
   const inEvent = Schedule.find(
     x =>
       x.startTime < new Date() &&
@@ -22,10 +27,10 @@ const getNextEvent = (): HackathonEvent => {
         .toDate() > new Date()
   );
 
-  if (inEvent) return inEvent;
+  if (inEvent) return {event: inEvent, isHappeningNow: true};
 
   const event = Schedule.find(x => x.startTime > new Date());
-  return event || Schedule[Schedule.length - 1];
+  return {event: event || Schedule[Schedule.length - 1], isHappeningNow: false};
 };
 
 const ComingUp: React.FC = () => {
@@ -38,9 +43,9 @@ const ComingUp: React.FC = () => {
 
   return (
     <Container>
-      <Text color="#ff00df">COMING UP</Text>
-      <BigText color="#ff00df">{nextEvent.name}</BigText>
-      <Text color="#ff00df">{moment(nextEvent.startTime).format('HH:mm')}</Text>
+      <Text color="#ff00df">{nextEvent.isHappeningNow ? 'RIGHT NOW' : 'COMING UP'}</Text>
+      <BigText color="#ff00df">{nextEvent.event.name}</BigText>
+      <Text color="#ff00df">{moment(nextEvent.event.startTime).format('HH:mm')}</Text>
     </Container>
   );
 };
