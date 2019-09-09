@@ -1,5 +1,5 @@
 import moment from 'moment';
-import React, {useEffect, useState, useMemo} from 'react';
+import React, {useEffect, useState} from 'react';
 import styled from 'styled-components';
 import {Text, BigText, Row} from './components';
 import {Schedule, HackathonEvent} from './schedule';
