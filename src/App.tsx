@@ -1,26 +1,46 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+import ComingUp from './ComingUp';
+import {Row} from './components';
+import Countdown from './Countdown';
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background: #10092c;
+`;
+
+const TitleImage = styled.img`
+  margin: 72px;
+  object-fit: contain;
+  height: 32px;
+`;
+const HackathonLogo = styled.img`
+  margin: 72px;
+  object-fit: contain;
+  height: 72px;
+`;
+
+const Separator = styled.div`
+  height: 100%;
+  width: 2px;
+  background: repeating-linear-gradient(to bottom, white 0, white 3px, transparent 3px, transparent 7px);
+`;
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <TitleImage src={require('./resources/title.png')} />
+      <Row style={{flex: 1}}>
+        <ComingUp />
+        <Separator />
+        <Countdown />
+      </Row>
+      <HackathonLogo src={require('./resources/hackathon-logo.png')} />
+    </Container>
   );
-}
+};
 
 export default App;
