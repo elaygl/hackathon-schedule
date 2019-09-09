@@ -13,17 +13,18 @@ const Container = styled.div`
 `;
 
 const TitleImage = styled.img`
-  margin: 72px;
+  margin: 64px;
   object-fit: contain;
-  height: 32px;
+  height: 72px;
 `;
 const HackathonLogo = styled.img`
-  margin: 72px;
+  margin: 64px;
   object-fit: contain;
   height: 72px;
 `;
 
 const Separator = styled.div`
+  flex-shrink: 0;
   height: 100%;
   width: 2px;
   background: repeating-linear-gradient(to bottom, white 0, white 3px, transparent 3px, transparent 7px);

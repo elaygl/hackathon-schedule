@@ -6,8 +6,8 @@ import {BigText, Text} from './components';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  height: 210px;
   width: 600px;
   padding: 72px 0;
 `;

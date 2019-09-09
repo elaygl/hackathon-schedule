@@ -7,8 +7,8 @@ import {Schedule, HackathonEvent} from './schedule';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  height: 210px;
   width: 600px;
   padding: 72px 0;
 `;
@@ -39,10 +39,8 @@ const ComingUp: React.FC = () => {
   return (
     <Container>
       <Text color="#ff00df">COMING UP</Text>
-      <Row>
-        <BigText color="#ff00df">{nextEvent.name}</BigText>/
-        <Text color="#ff00df">/{moment(nextEvent.startTime).format('HH:mm')}</Text>
-      </Row>
+      <BigText color="#ff00df">{nextEvent.name}</BigText>
+      <Text color="#ff00df">{moment(nextEvent.startTime).format('HH:mm')}</Text>
     </Container>
   );
 };
