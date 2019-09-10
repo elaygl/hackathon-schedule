@@ -6,6 +6,7 @@ export const Text = styled.span`
   font-family: 'IBM Plex Mono', monospace;
   text-transform: uppercase;
   font-size: 3.5vw;
+  text-align: center;
 `;
 
 export const BigText = styled(Text)`

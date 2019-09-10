@@ -43,12 +43,12 @@ export const Schedule: HackathonEvent[] = [
     durationInHours: 0.5,
   },
   {
-    name: 'Massage',
+    name: 'Relaxation Time',
     startTime: moment({day: 11, month: 8, year: 2019, hour: 23, minute: 0, second: 0}).toDate(),
     durationInHours: 3,
   },
   {
-    name: "Owl's Snack",
+    name: 'More Food',
     startTime: moment({day: 12, month: 8, year: 2019, hour: 2, minute: 0, second: 0}).toDate(),
     durationInHours: 1,
   },
@@ -63,7 +63,7 @@ export const Schedule: HackathonEvent[] = [
     durationInHours: 0.5,
   },
   {
-    name: 'The Show',
+    name: 'Showtime!',
     startTime: moment({day: 12, month: 8, year: 2019, hour: 9, minute: 0, second: 0}).toDate(),
     durationInHours: 1.5,
   },
