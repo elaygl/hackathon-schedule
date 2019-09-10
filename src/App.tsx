@@ -10,17 +10,32 @@ const Container = styled.div`
   align-items: center;
   height: 100vh;
   background: #10092c;
+  position: relative;
+`;
+
+const Background = styled.div`
+  background: url(${require('./resources/background-icons.png')});
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
 `;
 
 const TitleImage = styled.img`
   margin: 64px;
   object-fit: contain;
   height: 72px;
+  z-index: 1;
 `;
 const HackathonLogo = styled.img`
   margin: 64px;
   object-fit: contain;
   height: 72px;
+  z-index: 1;
 `;
 
 const Separator = styled.div`
@@ -33,8 +48,9 @@ const Separator = styled.div`
 const App: React.FC = () => {
   return (
     <Container>
+      <Background />
       <TitleImage src={require('./resources/title.png')} />
-      <Row style={{flex: 1}}>
+      <Row style={{flex: 1, zIndex: 1, width: '100%'}}>
         <ComingUp />
         <Separator />
         <Countdown />

@@ -10,6 +10,7 @@ const Container = styled.div`
   height: 210px;
   width: 600px;
   padding: 72px 0;
+  margin: auto;
 `;
 
 const PresentationTime = moment({day: 12, month: 8, year: 2019, hour: 9, minute: 0, second: 0});

@@ -5,13 +5,13 @@ export const Text = styled.span`
   font-weight: 300;
   font-family: 'IBM Plex Mono', monospace;
   text-transform: uppercase;
-  font-size: 48px;
+  font-size: 3.5vw;
 `;
 
 export const BigText = styled(Text)`
   color: ${({color}) => color};
   font-weight: 700;
-  font-size: 64px;
+  font-size: 5vw;
 `;
 
 export const Row = styled.div`

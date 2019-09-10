@@ -11,6 +11,7 @@ const Container = styled.div`
   height: 210px;
   width: 600px;
   padding: 72px 0;
+  margin: auto;
 `;
 
 interface EventState {
@@ -43,9 +44,9 @@ const ComingUp: React.FC = () => {
 
   return (
     <Container>
-      <Text color="#ff00df">{nextEvent.isHappeningNow ? 'RIGHT NOW' : 'COMING UP'}</Text>
-      <BigText color="#ff00df">{nextEvent.event.name}</BigText>
-      <Text color="#ff00df">{moment(nextEvent.event.startTime).format('HH:mm')}</Text>
+      <Text color="#EA3498">{nextEvent.isHappeningNow ? 'RIGHT NOW' : 'COMING UP'}</Text>
+      <BigText color="#EA3498">{nextEvent.event.name}</BigText>
+      <Text color="#EA3498">{moment(nextEvent.event.startTime).format('HH:mm')}</Text>
     </Container>
   );
 };
