@@ -64,7 +64,7 @@ export const Schedule: HackathonEvent[] = [
   },
   {
     name: 'Showtime!',
-    startTime: moment({day: 12, month: 8, year: 2019, hour: 9, minute: 0, second: 0}).toDate(),
+    startTime: moment({day: 12, month: 8, year: 2019, hour: 10, minute: 0, second: 0}).toDate(),
     durationInHours: 1.5,
   },
 ];
