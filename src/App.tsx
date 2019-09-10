@@ -11,6 +11,7 @@ const Container = styled.div`
   height: 100vh;
   background: #10092c;
   position: relative;
+  overflow: hidden;
 `;
 
 const Background = styled.div`
