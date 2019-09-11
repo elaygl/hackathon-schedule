@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 
 setTimeout(() => {
   window.location.reload();
-}, 1000 * 60 * 15);
+}, 1000 * 60 * 5);
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

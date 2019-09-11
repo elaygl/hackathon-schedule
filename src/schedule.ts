@@ -19,7 +19,7 @@ export const Schedule: HackathonEvent[] = [
   },
   {
     name: 'Lunch',
-    startTime: moment({day: 11, month: 8, year: 2019, hour: 12, minute: 30, second: 0}).toDate(),
+    startTime: moment({day: 11, month: 8, year: 2019, hour: 12, minute: 45, second: 0}).toDate(),
     durationInHours: 1,
   },
   {
