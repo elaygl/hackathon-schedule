@@ -45,7 +45,7 @@ export const Schedule: HackathonEvent[] = [
   {
     name: 'Relaxation Time',
     startTime: moment({day: 11, month: 8, year: 2019, hour: 23, minute: 0, second: 0}).toDate(),
-    durationInHours: 3,
+    durationInHours: 0.1,
   },
   {
     name: 'More Food',
