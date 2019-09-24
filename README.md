@@ -1,6 +1,7 @@
 # hackathon-schedule
 Hackathon schedule website with live updates
 
+<img src="https://raw.githubusercontent.com/elaygl/hackathon-schedule/master/schedule-demo.png" width="720" alt="schedule demo">
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
