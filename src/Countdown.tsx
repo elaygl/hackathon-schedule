@@ -2,6 +2,7 @@ import moment from 'moment';
 import React, {useEffect, useState} from 'react';
 import styled from 'styled-components';
 import {BigText, Text} from './components';
+import {Schedule} from './schedule';
 
 const Container = styled.div`
   display: flex;
@@ -13,8 +14,8 @@ const Container = styled.div`
   margin: auto;
 `;
 
-const PresentationTime = moment({day: 12, month: 8, year: 2019, hour: 10, minute: 0, second: 0});
-const calculateTimeLeft = () => moment.duration(PresentationTime.diff(moment()));
+const LastEvent = moment(Schedule[Schedule.length - 1].startTime);
+const calculateTimeLeft = () => moment.duration(LastEvent.diff(moment()));
 const padWithZero = (num: number): string => num.toString().padStart(2, '0');
 
 const Countdown: React.FC = () => {
