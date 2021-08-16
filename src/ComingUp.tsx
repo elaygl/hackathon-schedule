@@ -9,6 +9,8 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   height: 210px;
+
+  
   width: 600px;
   padding: 72px 0;
   margin: auto;
