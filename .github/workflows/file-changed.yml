@@ -15,7 +15,7 @@ jobs:
       - run: |
           ts_files_count=0
           js_files_count=0
-          echo "adasd" ${steps.files.outputs.all}
+          echo "${{ steps.abc.outputs.all }}"
           for changed_file in ${{ steps.files.outputs.all }}; do
             if  [[ ${changed_file} == "*.ts" ]] || [[ ${changed_file} == "*.tsx" ]]
             then

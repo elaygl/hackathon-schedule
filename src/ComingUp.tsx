@@ -10,6 +10,9 @@ const Container = styled.div`
   align-items: center;
   height: 210px;
 
+
+
+  
   
   width: 600px;
   padding: 72px 0;
