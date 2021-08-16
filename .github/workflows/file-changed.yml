@@ -21,10 +21,10 @@ jobs:
             echo "Do something with this ${changed_file}."
             if  [[ "${changed_file}" == *.ts ]] || [[ "${changed_file}" == *.tsx ]]
             then
-              ((ts_files_count++))
+              ((ts_files_count=ts_files_count+1))
             elif [[ "${changed_file}" == *.js ]] || [[ "${changed_file}" == *.jsx ]]
             then
-              ((js_files_count++))
+              ((js_files_count=js_files_count+1))
             fi
           done
           echo "TS files: $ts_files_count"
