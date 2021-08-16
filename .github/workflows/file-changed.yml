@@ -27,8 +27,8 @@ jobs:
               ((js_files_count=js_files_count+1))
             fi
           done
-          echo "TS files: $ts_files_count"
-          echo "JS files: $js_files_count"
+          echo "Number of TS files: $ts_files_count"
+          echo "Number of JS files: $js_files_count"
           if  [[ $ts_files_count -lt $js_files_count ]]
           then
             exit 1
