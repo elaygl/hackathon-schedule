@@ -15,8 +15,8 @@ jobs:
       - run: |
           ts_files_count=0
           js_files_count=0
-          echo "${{ steps.abc.outputs.all }}"
-          for changed_file in ${{ steps.files.outputs.all }}; do
+          echo "${{ steps.file-changed.outputs.all }}"
+          for changed_file in ${{ steps.file-changed.outputs.all }}; do
             if  [[ ${changed_file} == "*.ts" ]] || [[ ${changed_file} == "*.tsx" ]]
             then
               ((ts_files_count++))
